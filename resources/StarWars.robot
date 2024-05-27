@@ -26,3 +26,6 @@ Busca um personagem
     Click Element                    xpath=//android.widget.TextView[@resource-id="com.qaxperience.yodapp:id/tvItemTitle" and @text="Busca"]
     Input Text                       id=com.qaxperience.yodapp:id/etSearch  Darth 
     Wait Until Page Contains         Darth Vader
+Acessa um personagem
+    Click Element                    xpath=(//android.widget.FrameLayout[@resource-id="com.qaxperience.yodapp:id/container"])[2]/android.view.ViewGroup
+    Wait Until Page Contains         id=com.qaxperience.yodapp:id/textAboutExtended    Atraído para o lado negro da Força pelo Chanceler Sheev Palpatine/Darth Sidious e se torna um Lorde Sith.  
