@@ -1,0 +1,87 @@
+#BDD da Automação do Apk Yoda
+
+1 - Valida se está na tela inicial
+Dado que abro o app yodapp
+Quando clico no app
+Então verifico a mensagem na tela "Mobile Training by Papito!
+
+2 - Validar a navegação do sub-menu
+Dado que estou na tela principal
+Quando clico no hamburguer
+Então o sub-menu aparece com as opções: Clique em Botões,Check e Radio, Formulario, Dialogs e Star Wars
+
+3 - Realizo um clique simples no sub-menu Clique em Botões
+Dado que seleciono clique simples na opção de Clique em Botões
+Quando clico no botão 
+Então uma mensagem aparece informando que foi realizado um clique simples
+
+4 - Realizo um clique longo no sub-menu Clique em Botões
+Dado que seleciono clique longo na opção de Clique em Botões
+Quando clico no botão 
+Então uma mensagem aparece informando que foi realizado um clique longo
+
+5 - Validar o Checkbox
+Dado que quero validar o checkbox
+Quando acesso a opçao Check e Radio e seleciono RobotFramework
+Então eu verifico se a opçao está selecionada
+
+6 - Validar o Radio Button
+Dado que quero validar o radio button
+Quando acesso a opçao Check e Radio e seleciono Python
+Então eu verifico se a opçao está selecionada
+
+7 - Validar o acesso ao formulario
+Dado que quero validar o acesso ao formulario de Cadastro
+Quando clico em Formulario 
+Então o apk me retorna com 2 opções: Login e Cadastro
+
+8 - Validar o Formulário de Cadastro
+Dado que quero realizar um cadastro 
+Quando clico em Cadastro e preencho os campos
+Então clico em cadastrar e uma mensagem aparece.
+
+9 - Validar o Formulário de Login(dados válidos)
+Dado que quero realizar um login 
+Quando clico em login e preencho os campos
+Então clico em entrar e uma mensagem de sucesso aparece.
+
+10 - Validar o Formulário de Login(dados inválidos)
+Dado que quero realizar um login 
+Quando clico em login e preencho os campos com dados inválidos
+Então clico em entrar e uma mensagem de erro aparece.
+
+11 - Validar o acesso ao Star Wars
+Dado que quero validar o acesso ao Star Wars
+Quando clico em Star Wars
+Então o apk me retorna com 2 opções: Busca e Lista
+
+12 - Realiza a busca de um Star Wars
+Dado que quero buscar um personagem 
+Quando procuro pelo nome do personagem
+Então o apk me retorna com os dados informados
+
+13 - Opção Lista dos personagens
+Dado que estou na opçao de lista dos personagens
+Quando arrasto para o lado esquerdo
+Então eu posso excluir ou clicar no personagem
+
+14 - Opção excluir o personagem
+Dado que estou na opçao de lista dos personagens
+Quando arrasto para o lado esquerdo e clico na lixeira
+Então eu excluo o personagem
+
+15 - Opção acessar dados do personagem
+Dado que estou na opçao de lista dos personagens
+Quando clico no personagem
+Então é exibido as informaçoes do personagem
+
+16 - Opção buscar dados do personagem
+Dado que estou na opçao de busca dos personagens
+Quando procuro pelo nome do personagem
+Então é exibido as informaçoes do personagem
+
+17 - Opção listar dados do personagem
+Dado que estou na opçao de busca dos personagens
+Quando clico no nome do personagem
+Então é exibido as informaçoes do personagem
+
