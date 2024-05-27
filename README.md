@@ -1,6 +1,6 @@
 # Yodapp
 
-# Este projeto é uma automação do app Yodapp.
+Este projeto é uma automação do app Yodapp.
 
 # Instalação
 1 - Visual Studio instalado.
