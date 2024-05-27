@@ -16,4 +16,4 @@
 
 # Execução dos testes
 
-Para executar os testes, basta abrir o terminal no local dos testes do projeto e dar o comando: robot nome_do_arquivo.robot + <enter>
+Para executar os testes, basta abrir o terminal no local dos testes do projeto e dar o comando: robot nome_do_arquivo.robot + enter
