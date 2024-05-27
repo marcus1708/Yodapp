@@ -1,0 +1,28 @@
+** Settings ***
+
+Library  AppiumLibrary
+
+***Variables***
+${btn_del}                           id=com.qaxperience.yodapp:id/btnRemove
+*** Keywords ***
+
+Acessa menu "Star Wars"
+    Wait Until Page Contains         QAX
+    Click Element                    //android.widget.Button[@text="QAX"]
+    Wait Until Element Is Visible    xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]   
+    
+    Click Element                    xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]    
+    Wait Until Element Is Visible    id=com.qaxperience.yodapp:id/navView         
+    
+    Click Element                    xpath=//androidx.recyclerview.widget.RecyclerView[@resource-id="com.qaxperience.yodapp:id/rvNavigation"]/android.widget.FrameLayout[5]
+    Wait Until Element Is Visible    id=com.qaxperience.yodapp:id/toolbarTitle    
+    Element Text Should Be           id=com.qaxperience.yodapp:id/toolbarTitle    Star Wars
+Exclui um personagem    
+    Swipe By Percent                 88.88    18.22    47.22    18.22
+    Wait Until Element Is Visible    ${btn_del} 
+    Click Element                    ${btn_del}
+    Sleep                            5
+Busca um personagem
+    Click Element                    xpath=//android.widget.TextView[@resource-id="com.qaxperience.yodapp:id/tvItemTitle" and @text="Busca"]
+    Input Text                       id=com.qaxperience.yodapp:id/etSearch  Darth 
+    Wait Until Page Contains         Darth Vader
