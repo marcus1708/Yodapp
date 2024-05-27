@@ -21,3 +21,13 @@ Realiza a busca de um personagem
     Acessa menu "Star Wars"
     Busca um personagem
     Close Session
+Acessa dados de um personagem
+    Open Session
+    Acessa menu "Star Wars"
+    Acessa um personagem
+    Close Session
+
+
+
+
+
