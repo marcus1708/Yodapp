@@ -8,6 +8,8 @@ Este projeto é uma automação do app Yodapp.
 3 - Appium instalado.
 4 - Appium-inspector instalado.
 5 - ADB instalado.
+6 - Python instalado.
+7 - Robot Framework instalado
 
 # Configuração
 1 - Variáveis de ambiente Java.
@@ -16,4 +18,4 @@ Este projeto é uma automação do app Yodapp.
 
 # Execução dos testes
 
-Para executar os testes, basta abrir o terminal no local dos testes do projeto e dar o comando: robot nome_do_arquivo.robot + enter
+Para executar os testes, abra o terminal no local dos testes do projeto e dar o comando: robot nome_do_arquivo.robot + enter
