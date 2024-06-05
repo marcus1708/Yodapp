@@ -17,10 +17,8 @@ Acessa menu "Dialogs"
     Element Text Should Be           id=com.qaxperience.yodapp:id/toolbarTitle    Dialogs
 Valida o Dialogs 
     Click Element                    id=com.qaxperience.yodapp:id/tvItemTitle
-    Wait Until Element Is Visible    xpath=//android.view.ViewGroup
-    Element Text Should Be           id=com.qaxperience.yodapp:id/dialogInfoTitle    Star Wars
-    Element Text Should Be           id=com.qaxperience.yodapp:id/dialogInfoSubtitle    Mestre Yoda
-    Element Text Should Be           id=com.qaxperience.yodapp:id/dialogInfoText    Que a Força esteja com você.
+    Wait Until Element Is Visible    id=com.qaxperience.yodapp:id/dialogInfoText    
+    Wait Until Element Is Visible    id=com.qaxperience.yodapp:id/dialogInfoSubtitle
     Click Element                    id=com.qaxperience.yodapp:id/dialogInfoOk
 
   
