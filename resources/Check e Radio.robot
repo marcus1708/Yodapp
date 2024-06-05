@@ -22,9 +22,9 @@ Acessa Checkbox
     Click Element                    ${element}
     Element Attribute Should Match   ${element}    checked    true
 Acessa Radio Button
-    ${element}=                      Set Variable     xpath=//android.widget.RadioButton[contains(@text, 'Python')]
+    ${element}=                      Set Variable     xpath=//android.widget.RadioButton[@resource-id="com.qaxperience.yodapp:id/radioButton" and @text="Python "]
     Click Element                    xpath=//android.widget.TextView[@resource-id="com.qaxperience.yodapp:id/tvItemTitle" and @text="Botões de radio"] 
     # texto: Escolha sua linguagem preferida
-    Wait Until Page Contains         id:com.qaxperience.yodapp:id/tvTitle 
+    Wait Until Element Is Visible    ${element}
     Click Element                    ${element}
-    Element Attribute Should Match   ${element}    checked  true
+    Element Attribute Should Match   ${element}    checked    true
