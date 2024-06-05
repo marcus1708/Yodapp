@@ -16,9 +16,11 @@ Acessa menu "Check e Radio"
     Wait Until Element Is Visible    id=com.qaxperience.yodapp:id/toolbarTitle  
     Element Text Should Be           id=com.qaxperience.yodapp:id/toolbarTitle    Check e Radio
 Acessa Checkbox
-    ${element}=                      Set Variable     xpath=//android.widget.CheckBox[contains(@text,'Robot Framework')]
-    Click Element                    xpath=//android.widget.TextView[@resource-id="com.qaxperience.yodapp:id/tvItemTitle" and @text="Checkbox"]        
-    Element Attribute Should Match   ${element}    checked  true
+    ${element}=                      Set Variable     xpath=//android.widget.CheckBox[@resource-id="com.qaxperience.yodapp:id/checkboxButton" and @text="Robot Framework "]
+    Click Element                    xpath=//android.widget.TextView[@resource-id="com.qaxperience.yodapp:id/tvItemTitle" and @text="Checkbox"]
+    Wait Until Element Is Visible    ${element}
+    Click Element                    ${element}
+    Element Attribute Should Match   ${element}    checked    true
 Acessa Radio Button
     ${element}=                      Set Variable     xpath=//android.widget.RadioButton[contains(@text, 'Python')]
     Click Element                    xpath=//android.widget.TextView[@resource-id="com.qaxperience.yodapp:id/tvItemTitle" and @text="Botões de radio"] 
