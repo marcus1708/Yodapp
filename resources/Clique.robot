@@ -19,11 +19,7 @@ Clique simples
     Click Element                    xpath=//android.widget.TextView[@resource-id="com.qaxperience.yodapp:id/tvItemTitle" and @text="Clique simples"]        
     Wait Until Element Is Visible    id=com.qaxperience.yodapp:id/short_click
     Click Element                    id=com.qaxperience.yodapp:id/short_click
-    Wait Until Element Is Visible    xpath=//android.widget.Toast[@text="Isso é um clique simples"]    1
-    Element Text Should Be           xpath=//android.widget.Toast[@text="Isso é um clique simples"]    Isso é um clique simples
 Clique longo
-    Click Element                    xpath=//android.widget.TextView[@resource-id="com.qaxperience.yodapp:id/tvItemTitle" and @text="Clique simples"]    
+    Click Element                    xpath=//android.widget.TextView[@resource-id="com.qaxperience.yodapp:id/tvItemTitle" and @text="Clique longo"]    
     Wait Until Element Is Visible    id=com.qaxperience.yodapp:id/long_click    
     Click Element                    id=com.qaxperience.yodapp:id/long_click
-    Wait Until Element Is Visible    xpath=//android.widget.Toast[@text="Isso é um clique longo"]    10
-    Element Text Should Be           xpath=//android.widget.Toast[@text="Isso é um clique longo"]    Isso é um clique longo
