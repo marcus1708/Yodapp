@@ -3,7 +3,7 @@
 Library  AppiumLibrary
 
 ***Variables***
-${btn_del}                           id=com.qaxperience.yodapp:id/btnRemove
+${btn_del}=                          id=com.qaxperience.yodapp:id/btnRemove
 *** Keywords ***
 
 Acessa menu "Star Wars"
@@ -18,10 +18,10 @@ Acessa menu "Star Wars"
     Wait Until Element Is Visible    id=com.qaxperience.yodapp:id/toolbarTitle    
     Element Text Should Be           id=com.qaxperience.yodapp:id/toolbarTitle    Star Wars
 Exclui um personagem    
-    Swipe By Percent                 88.88    18.22    47.22    18.22
+    Click Element                    xpath=//android.widget.TextView[@resource-id="com.qaxperience.yodapp:id/tvItemTitle" and @text="Lista"]
+    Swipe By Percent                 92.59    20.58    47.22    20.58
     Wait Until Element Is Visible    ${btn_del} 
     Click Element                    ${btn_del}
-    Sleep                            5
 Busca um personagem
     Click Element                    xpath=//android.widget.TextView[@resource-id="com.qaxperience.yodapp:id/tvItemTitle" and @text="Busca"]
     Input Text                       id=com.qaxperience.yodapp:id/etSearch  Darth 
